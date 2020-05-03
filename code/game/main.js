@@ -19,7 +19,7 @@ const gameWidth = 1216;
 const map = new Map();
 
 // gameloop
-setInterval(gameloop, 1);
+setInterval(gameloop, 1000/60);
 
 function gameloop(){
     draw();
