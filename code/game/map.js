@@ -1,3 +1,10 @@
+// textures
+let grass = new Image();
+grass.src = "./game/img/grass.png";
+
+let wasteland = new Image();
+wasteland.src = "./game/img/wasteland.png";
+
 export default class Map {
     gameTiles = [];
     gameMap = [];
@@ -286,17 +293,20 @@ export default class Map {
     }
 
     generateMap(ctx){
-        let color; 
+        // let color; 
+        let image;
 
         for(let i = 0; i < this.gameMap.length; i++){
             for(let j = 0; j < this.gameMap[i].length; j++){
                 if(this.gameMap[i][j].status == "enemy"){
-                    color = this.gameTiles[0].color;
+                    // color = this.gameTiles[0].color;
+                    image = wasteland;
                 } else {
-                    color = this.gameTiles[1].color;
+                    // color = this.gameTiles[1].color;
+                    image = grass;
                 }
-                ctx.fillStyle = color;
-                ctx.fillRect(this.gameMap[i][j].posX, this.gameMap[i][j].posY, this.blockWidth, this.blockHeight);
+                // ctx.fillStyle = color;
+                ctx.drawImage(image ,this.gameMap[i][j].posX, this.gameMap[i][j].posY, this.blockWidth, this.blockHeight);
             }
         }
     }

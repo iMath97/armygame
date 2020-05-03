@@ -4,6 +4,11 @@
 }
 .container canvas {
   border: 1px solid black;
+  position: absolute;
+  z-index: 0;
+}
+.container canvas#fgcanvas {
+  z-index: 1;
 }
 
 /*# sourceMappingURL=game.css.map */
