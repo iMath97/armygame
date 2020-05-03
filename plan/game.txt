@@ -1,4 +1,4 @@
-Army attack clone
+Army attack
 
 -> concept
 2 kanten vechten om de wereld te veroveren, turn-based tegen de AI
