@@ -1,0 +1,14 @@
+Army attack clone
+
+-> concept
+2 kanten vechten om de wereld te veroveren, turn-based tegen de AI
+
+-> config
+- moeilijkheidsgraad: 1: easy (ai 1 vijand per move), 2: medium (ai 2 vijanden per move), 3: hard (ai kan alle vijanden in een keer besturen)
+
+-> resources
+- suplies: herstellen van voertuigen en eenheden, krijg je door supply drops aan te vragen
+- gold: aankopen nieuwe troepen, krijg je door je gebied uit te breiden
+
+-> troepen
+- soldaten
